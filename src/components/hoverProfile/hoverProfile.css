@@ -1,0 +1,121 @@
+.hover__profile {
+    display: var(--hover-profile-display-none);
+    width: var(--hover-profile-width);
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px var(--hover-profile-shadow-color);
+    padding-top: 1rem;
+    margin-left: calc(var(--suggestions-logo-width) + 14.4px);
+    position: absolute;
+    top: 11%;
+    z-index: 99!important;
+    background-color: var(--white-color);
+}
+
+.hover__profile .suggestions {
+    padding-left: 1rem;
+    height: 60px!important;
+}
+
+.hover__profile .suggestions .profile__logo-container {
+    width: var(--hover-profile-logo-width);
+    height: var(--hover-profile-logo-width);
+}
+
+.hover__profile .suggestions .profile__logo-container .profile__logo {
+  /* background-color: grey; */
+  width: calc(var(--hover-profile-logo-width) - 4px);
+  height: calc(var(--hover-profile-logo-width) - 4px);
+  border-radius: 50%;
+}
+
+
+.user__details-numbers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.user__details-numbers div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user__details-numbers div p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: .5rem;
+}
+.user__details-numbers div div {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+hr {
+    opacity: .3; 
+}
+
+.private__account-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: red;   */
+    align-items: center;
+}
+
+.private__account-container hr {
+    opacity: .3;
+    width: 100%;
+}
+
+.private_account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.private_account img {
+    width: var(--private-lock-img-width);
+}
+
+.private_account h3, .private_account h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.private_account h3 {
+    color: grey;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    width: 90%;
+}
+
+.follow-button {
+    display: flex;
+    margin: 1.5rem;
+    width: 90%;
+    background-color: #1b93ee;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.follow-button img {
+    height: 1.5rem;
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.follow-button h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+

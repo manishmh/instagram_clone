@@ -1,0 +1,20 @@
+.profile__logo-container {
+    border: 1px solid rgba(176, 172, 172, 0.5);
+    cursor: pointer;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: calc(var(--profile-logo-width) + 4px);
+    height: calc(var(--profile-logo-width) + 4px);
+    border-radius: 50%;
+  }
+  .profile__logo-container .profile__logo {
+    width: var(--profile-logo-width);
+    height: var(--profile-logo-width); 
+    border-radius: 50%;
+    
+  }
+  .profile__logo-container .profile__logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }

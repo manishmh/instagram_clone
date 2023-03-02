@@ -1,0 +1,89 @@
+.header-container {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+
+    padding: 0 16px;
+    height: var(--header-height);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.2);
+}
+.header-container .header-logo-container {
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+.header-container .header-logo-container .instagram-logo {
+    width: var(--instagram-logo-width);
+}
+.header-container .search-and-account-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-container .search-and-account-container .search-bar-container {
+    margin-right: 2vw;
+    display: flex;
+    align-items: center;
+}
+.header-container .search-and-account-container .search-bar-container form {
+    display: flex;
+}
+.header-container .search-and-account-container .search-bar-container form .img-container {
+    background-color: rgb(220, 220, 220);
+    padding: 0 2rem;
+    opacity: 0.5;
+    border-top-left-radius: var(--search-border-radius);
+    border-bottom-left-radius: var(--search-border-radius);
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.header-container .search-and-account-container .search-bar-container form .img-container {
+    width: var(--search-img-width);
+    padding-right: 3rem;
+}
+.header-container .search-and-account-container .search-bar-container form input[type=text] {
+    background-color: rgb(239, 239, 239);
+    font-size: 1.5rem;
+    border: none;
+    width: var(--search-bar-width);
+    min-width: var(--search-bar-min-width);
+    height: var(--search-bar-height); 
+    border-top-right-radius: var(--search-border-radius);
+    border-bottom-right-radius: var(--search-border-radius);
+    outline: none;
+    padding-top: .5rem
+}
+.header-container .search-and-account-container .search-bar-container form input::-moz-placeholder {
+    color: grey;
+    opacity: 0.8;
+    font-weight: 500;
+    font-size: var(--search-placeholder-font-size);
+}
+.header-container .search-and-account-container .search-bar-container form input:-ms-input-placeholder {
+    color: grey;
+    opacity: 0.8;
+    font-size: var(--search-placeholder-font-size);
+}   
+.header-container .search-and-account-container .search-bar-container form input::placeholder {
+    display: flex;
+    color: grey;
+    opacity: 0.8;
+    font-size: var(--search-placeholder-font-size);
+}
+.header-container .search-and-account-container .search-bar-container form.search-bar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header-container .notifications__icon img {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: var(--header-notifications-img-width);
+    height: var(--header-notifications-img-width);
+}
+  
+  

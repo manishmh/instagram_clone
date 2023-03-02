@@ -1,0 +1,310 @@
+#test {counter-reset:feed__story;}
+#test > div {counter-increment:feed__story;}
+#result:before {content:counter(feed__story);}
+
+
+.feed__story {
+  display: flex;
+  max-width: var(--feed-size); 
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  overflow: hidden; 
+  position: relative;
+}
+
+.feed__story .handle {
+  font-size: 30px;
+  padding: 0 1rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin-bottom: 1.5rem;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+.left-handle {
+  display: var(--left-handle-display);
+  position: absolute;
+  left: 4%;
+  z-index: 10; 
+}
+
+.right-handle {
+  display: var(--right-handle-display);
+  position: absolute;
+  right: 4%;
+  z-index: 10;
+}
+.feed__story .feed__story-profile {
+  transform: translateX(calc(-400% * var(--slider-index)));
+  transition: transform 300ms ease-in-out;
+  text-align: center;
+  overflow: hidden;
+  min-width: calc(470px / 6);
+  max-width: calc(470px / 6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.feed__story .feed__story-profile .username {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  max-width: var(--username-width);
+  overflow-x: hidden;
+  padding: 0 1px;
+}
+.feed__story .profile__logo-container {
+  border: 2px solid red;
+  padding: 0;
+  height: var(--story-logo-container);
+  width: var(--story-logo-container);
+  min-width: var(--story-logo-container);
+}
+.feed__story .profile__logo-container .profile__logo {
+  padding: 2px;
+  width: calc(var(--story-logo-container) - 4px);
+  height: calc(var(--story-logo-container) - 4px);
+}
+
+.feed__post {
+  width: var(--feed-size);
+}
+
+.feed__post-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--feed-size);
+  height: var(--feed-header-height);
+}
+
+.feed__post-profile-user .post-day, span {
+  font-size: 1.6rem;
+  color: grey;
+  opacity: .9;
+}
+
+.post-day, .post-day span {
+  margin-left: 5px;
+}
+
+.feed__post-profile-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feed__post-profile-user .feed__story-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feed__post-profile-user .feed__story-profile .profile__logo-container {
+  border: 2px solid red;
+  padding: 0;
+  height: var(--feed-header-profile-logo-width);
+  width: var(--feed-header-profile-logo-width);
+}
+.feed__post-profile-user .feed__story-profile .profile__logo-container .profile__logo {
+  padding: 2px;
+  width: calc(var(--feed-header-profile-logo-width) - 4px);
+  height: calc(var(--feed-header-profile-logo-width) - 4px);
+}
+.feed__post-profile-user .post-day-dot {
+  width: 5px;
+  height: 5px;
+  background-color: grey;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+.feed__post-profile-user .feed__story-profile .username {
+  font-size: var(--feed-header-profile-username);
+  font-weight: 700;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.feed__post-profile-user .feed__story-profile .username:hover {
+  color: grey;
+}
+
+.feed__post-profile-options img {
+  width: 3rem;
+  cursor: pointer;
+}
+
+.feed__post-profile-options:hover {
+  opacity: 0.5;
+}
+
+.posts {
+  margin-top: 1rem;
+}
+
+.posts__img-container {
+  max-width: var(--feed-size);
+  max-height: var(--feed-img-container-max-height);
+  min-height: var(--feed-img-container-min-height);
+  border-radius: 3px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.posts__img-container img {
+  width: 99.5%;
+  max-height: var(--feed-img-container-max-height);
+  min-height: var(--feed-img-container-min-height);
+  border-radius: 3px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.feed__interaction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: var(--feed-size);
+}
+.feed__interaction .like-comment-share img {
+  width: var(--feed-interaction-img-width);
+  height: var(--feed-interaction-img-width);
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.feed__interaction .like-comment-share img:hover {
+  opacity: 0.5;
+}
+.feed__interaction .feed__interaction-save img {
+  cursor: pointer;
+}
+.feed__interaction .feed__interaction-save img:hover {
+  opacity: 0.5;
+}
+
+.feed__like-count {
+  max-width: var(--feed-size);
+  display: flex;
+  align-items: center;
+}
+.feed__like-count .mutual-like {
+  margin-right: 4px;
+}
+.feed__like-count .mutual-like .profile__logo-container {
+  padding: 0;
+  height: var(--like-profile-logo-width);
+  width: var(--like-profile-logo-width);
+  border: none;
+}
+.feed__like-count .mutual-like .profile__logo-container .profile__logo {
+  padding: 0;
+  width: var(--like-profile-logo-width);
+  height: var(--like-profile-logo-width); 
+  border: none;
+}
+.feed__like-count .like-count-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.feed__like-count .username-container, .feed__like-count .like_count, .feed__like-count .others {
+  font-size: var(--feed-footer-font-size);
+}
+.feed__like-count .like_count, .feed__like-count .others {
+  padding-left: 5px;
+}
+.feed__like-count #username {
+  color: black;
+}
+.feed__like-count #username, .feed__like-count .like_count, .feed__like-count .others {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.feed__post-caption {
+  max-width: var(--feed-size);
+  margin-top: 1rem;
+}
+.feed__post-caption .caption {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.feed__post-caption .caption .caption__username, .feed__post-caption .caption .user-caption {
+  font-size: var(--feed-footer-font-size);
+}
+.feed__post-caption .caption .caption__username {
+  font-weight: 600;
+  cursor: pointer;
+}
+.feed__post-caption .caption .user-caption {
+  margin-left: 5px;
+}
+
+.feed__view-comments {
+  font-size: var(--feed-footer-font-size);
+  color: grey;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+#comment_count {
+  font-size: var(--feed-footer-font-size);
+}
+
+.feed__add-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  max-width: var(--feed-size);
+}
+.feed__add-comment .textarea {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  resize: both;
+  min-height: var(--comment-text-area-min-height);
+  line-height: calc(var(--comment-text-area-min-height) + 2px);
+  resize: none;
+  outline: 0px solid transparent;
+}
+.feed__add-comment .textarea[contenteditable]:empty::before {
+  content: "Add a comment";
+  color: grey;
+  cursor: text;
+}
+.feed__add-comment .emoji_post-button {
+  display: flex;
+  align-items: center;
+}
+#comment-post-button {
+  display: var(--comment-post-button-display);
+}
+.feed__add-comment .emoji_post-button button {
+  font-size: var(--feed-footer-font-size);
+  border: none;
+  cursor: pointer;
+  background: none;
+  margin-right: 1rem;
+  color: #068cf3;
+  font-weight: 600;
+}
+.feed__add-comment .emoji_post-button button:hover {
+  color: #02467a;
+}
+.feed__add-comment .emoji_post-button img {
+  width: var(--feed-footer-font-size); 
+  cursor: pointer;
+}
+.feed__add-comment .emoji_post-button img:hover {
+  opacity: 0.5;
+}
+
+.feed hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+}/*# sourceMappingURL=feed.css.map */

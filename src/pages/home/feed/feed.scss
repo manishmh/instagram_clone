@@ -1,0 +1,309 @@
+.feed__story {
+    display: flex;
+    width: 470px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    .feed__story-profile {
+        text-align: center;
+        overflow: hidden;
+        min-width: 70px;
+        max-width: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .username {
+            font-size: 1.3rem;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+    }
+
+    .profile__logo-container {
+        border: 2px solid red; 
+        padding: 0;
+        height: 66px;
+        width: 66px;
+
+        .profile__logo {
+            padding: 2px;
+            width: 62px;
+            height: 62px;
+        }
+    }
+}
+
+// Feed_profile_header
+
+.feed__post {
+    width: 470px;
+}
+
+.feed__post-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 470px;
+    height: 56px;
+}
+
+.feed__post-profile-user .post-day, span {
+    font-size: 1.6rem;
+    color: grey;
+}
+
+.post-day, .post-day span {
+    margin-left: 7px;
+}
+
+.feed__post-profile-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .feed__story-profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .profile__logo-container {
+            border: 2px solid red; 
+            padding: 0;
+            height: 42px;
+            width: 42px;
+    
+            .profile__logo {
+                padding: 2px;
+                width: 38px;
+                height: 38px;
+            }
+        }
+    }
+
+    .post-day-dot {
+        width: 5px;
+        height: 5px;
+        background-color: grey;
+        border-radius: 50%;
+        margin-left: 1rem;
+    }
+
+    .feed__story-profile {
+        .username{
+            font-size: 1.68rem;
+            font-weight: 700;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+
+        .username:hover {
+            color: grey;
+        }
+    }
+}
+
+.feed__post-profile-options img {
+    width: 3rem;
+    cursor: pointer;
+}
+.feed__post-profile-options:hover {
+    opacity: .5;
+}
+
+// end
+
+.posts {
+    margin-top: 1rem;
+}
+
+.posts__img-container {
+    max-width: 468px;
+    max-height: 584px;
+    min-height: 444px;
+    border-radius: 3px;
+    object-fit: cover;
+
+
+    img {
+        width: 100%;
+        max-height: 584px;
+        min-height: 444px;
+        border-radius: 3px;
+        object-fit: cover;
+    }
+}
+
+.feed__interaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 470px;
+
+    .like-comment-share {
+
+        img {
+            width: 24px;
+            height: 24px;
+            margin-right: 2rem;
+            cursor: pointer;
+        }
+
+        img:hover {
+            opacity: .5;
+        }
+    }
+
+    .feed__interaction-save {
+        img {
+            cursor: pointer;
+        }
+        
+        img:hover {
+            opacity: .5;
+        }
+    }
+}
+
+.feed__like-count {
+    max-width: 470px;
+    display: flex;
+    align-items: center;
+
+    .mutual-like {
+        margin-right: 4px;
+        .profile__logo-container {
+            padding: 0;
+            height: 14px;
+            width: 14px;
+            border: none;
+    
+            .profile__logo {
+                padding: 0;
+                width: 14px;
+                height: 14px;
+                border: none;
+            }
+        } 
+    }
+
+    .like-count-container {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .username-container, .like_count, .others {
+        font-size: 14px; 
+    }
+
+    .like_count, .others {
+        padding-left: 5px;
+    }
+
+    #username {
+        color: black;
+    }
+
+    #username, .like_count, .others {
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+.feed__post-caption {
+    max-width: 470px;
+    margin-top: 1rem;
+
+    .caption {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .caption__username, .user-caption {
+            font-size: 14px;
+        }
+
+        .caption__username {
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .user-caption {
+            margin-left: 5px; 
+        }
+    }
+}
+
+.feed__view-comments {
+    font-size: 16px;
+    color: grey;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#comment_count {
+    font-size: 14px;
+}
+
+.feed__add-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    max-width: 470px;
+
+    .textarea {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        resize: both;
+        min-height: 18px;
+        line-height: 20px;
+        resize: none;
+        outline: 0px solid transparent;
+    }
+
+    .textarea[contenteditable]:empty::before {
+        content: "Add a comment";
+        color: grey;
+        cursor: text;
+    }
+
+    .emoji_post-button {
+        display: flex;
+        align-items: center;
+
+        button {
+            font-size: 14px;
+            border: none;
+            cursor: pointer;    
+            background: none;
+            margin-right: 1rem;
+            color: #068cf3;
+            font-weight: 600;
+        }
+
+        button:hover {
+            color: #02467a
+        }
+
+        img {
+            width: 14px;
+            cursor: pointer;
+        }
+
+        img:hover {
+            opacity: .5;
+        }
+    }
+}
+
+.feed hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    opacity: .5;
+}
+

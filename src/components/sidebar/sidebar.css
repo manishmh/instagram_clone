@@ -1,0 +1,89 @@
+:root {
+  --sidebar-width: 280px;  
+  --sidebar-more-img: 24px;
+}
+
+.sidebar {
+  position: fixed;
+  padding: 4rem 3rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  width: var(--sidebar-width);
+  height: 100vh;
+}
+
+.sidebar__img-logo {
+  padding-bottom: 2vh;
+}
+
+.sidebar__img-short-logo {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  display: none;
+}
+
+.sidebar__img-short-logo img {
+  width: var(--instagram-short-logo);
+}
+
+.sidebar__menu-home, .sidebar__menu-search, .sidebar__menu-explore, .sidebar__menu-reels, .sidebar__menu-messages,
+.sidebar__menu-notifications, .sidebar__menu-create, .sidebar__menu-profile, .sidebar__more {
+  display: flex;
+  padding-top: 4vh;
+  cursor: pointer;
+}
+.home__sidebar .sidebar__img-short-logo {
+  display: flex;
+}
+.sidebar__menu h3, .sidebar__more h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  opacity: 0.8;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__menu h3:active {
+  font-weight: 700; 
+}
+
+.sidebar__menu img, .sidebar__more img {
+  width: 2.5rem;
+}
+
+.sidebar__img-logo img {
+  width: var(--instagram-sidebar-logo);
+}
+.sidebar__more {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5rem;
+}
+
+.sidebar__more img {
+  width: var(--sidebar-more-img);
+  height: var(--sidebar-more-img);
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__menu-profile .suggestions {
+  height: 29.2px;
+  width: 26px;
+}
+
+.sidebar__menu-profile .profile__logo-container {
+  width: 29.2px;
+  height: 29.2px;
+  border: none;
+}
+
+.sidebar__menu-profile .profile__logo-container .profile__logo {
+  width: 20px;
+  height: 20px;
+}
+.sidebar__menu-profile .profile__logo-container .profile__logo img {
+  width: 25.2px;
+  height: 25.2px;
+}/*# sourceMappingURL=sidebar.css.map */

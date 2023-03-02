@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 60%;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --feed-size: 470px;
+    --fake-sidebar-width: 315px;
+    --short-sidebar-width: 85px;
+    --short-footer-width: 900px;
+    --mobile-sidebar-height: 49px;
+    --input-container-width: 40vw;
+    --slider-index: 0;
+    --display-type-block: none;
+    --username-width: 70px;
+
+    --story-logo-container: 66px;
+    --feed-header-height: 56px;
+    --feed-header-profile-logo-width: 42px;
+    --feed-header-profile-username: 1.68rem;
+    --feed-img-container-max-height: 584px;
+    --feed-img-container-min-height: 444px;
+    --feed-interaction-img-width: 24px;
+    --like-profile-logo-width: 14px;
+    --feed-footer-font-size: 14px;
+    --comment-text-area-min-height: 18px;
+    --comment-post-button-display: block;
+    --left-handle-display: none;
+    --right-handle-display: block;
+
+    --header-height: 60px;
+    --header-notifications-img-width: 24px;
+    --instagram-logo-width: 103px;
+    --instagram-sidebar-logo: 12rem;
+    --instagram-short-logo: 3.5rem;
+    --search-border-radius: 0.5rem;
+    --search-img-width: 16px;
+    --search-bar-width: 22rem;
+    --search-bar-min-width: 20vw;
+    --search-bar-height: 36px;
+    --search-placeholder-font-size: 16px;
+
+    --suggestions-container-margin: 5.5rem;
+    --suggestions-logo-width: 32px;
+    --footer-width: 319px;
+    --footer-title-font-size: 1.3rem;
+    --footer-c-width: 12px;
+    --profile-logo-width: 56px;
+
+    --hover-profile-display-none: none;
+    --hover-profile-width: 335px;
+    --hover-profile-logo-width: 60px;
+    --private-lock-img-width: 6rem;
+    
+    --suggestions-width: 319px;
+    --suggestions-height: 56px;
+    --suggestions-user-name: 1.6rem;
+    --suggestion-user-action: 1.3rem;
+    
+    --white-color: #FFF;
+    --hover-profile-shadow-color: #cbced1;
+    --insta-blue-color: #1b93ee;
+    --insta-blue-hover-color: rgb(5, 5, 110);
+    --profile-logo-container-color: rgba(176, 172, 172, 0.5);
+    --grey-color: grey;
+    --white-color: #FFF;
+
+
+}

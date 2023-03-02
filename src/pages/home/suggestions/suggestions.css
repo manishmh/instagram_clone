@@ -1,0 +1,74 @@
+.suggestions__container {
+  margin-top: var(--suggestions-container-margin);
+}
+.suggestions__container .suggestions__follow-account {
+  margin-top: 1rem;
+}
+
+.suggestions__container .suggestions__follow {
+  position: relative;
+}
+
+.suggestions__follow .profile__logo-container:hover {
+  --display-none: block;
+}
+
+.suggestions__follow .suggestions .profile__user .profile__user-name {
+  font-size: 1.3rem;
+}  
+
+.suggestions__follow .suggestions .profile__user .profile__username:hover {
+  color: red;
+  --hover-profile-display-none: block;
+}
+
+.suggestions__see-all {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  max-width: var(--suggestions-width);
+}
+.suggestions__see-all h2 {
+  font-size: 1.6rem;
+  opacity: .9;
+}
+.suggestions__see-all .suggestions__see-all-action {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.suggestions__see-all .suggestions__see-all-action {
+  cursor: pointer;
+}
+.suggestions__see-all .suggestions__see-all-action:hover {
+  color: var(--grey-color);
+}
+.suggestions__see-all h2 {
+  color: var(--grey-color);
+}
+
+.suggestions__follow {
+  margin-top: 1.5rem;
+}
+
+.suggestions__follow .profile__logo-container {
+  width: calc(var(--suggestions-logo-width) + 4px);
+  height: calc(var(--suggestions-logo-width) + 4px); 
+}
+
+.suggestions__follow .profile__logo-container:hover {
+  --hover-profile-display-none: block;
+  background-color: red;
+}
+
+.suggestions__follow .profile__logo-container .profile__logo {
+  width: var(--suggestions-logo-width); 
+  height: var(--suggestions-logo-width); 
+}
+
+.suggestions__follow .suggestions {
+  height: 46px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=suggestions.css.map */
