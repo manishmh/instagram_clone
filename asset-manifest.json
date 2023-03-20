@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/instagram_clone/static/css/main.a050510b.css",
+    "main.js": "/instagram_clone/static/js/main.0f5c6676.js",
+    "static/media/Manish3.jpg": "/instagram_clone/static/media/Manish3.fc61d40560d339286b91.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/instagram_clone/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/Manish2.jpg": "/instagram_clone/static/media/Manish2.5d9af118b4edbcab67e9.jpg",
+    "static/media/Manish1.jpg": "/instagram_clone/static/media/Manish1.18abbb2aa76db0fe2f4c.jpg",
+    "static/media/Kriti1.jpg": "/instagram_clone/static/media/Kriti1.3ce3d40ce8663adb576c.jpg",
+    "static/media/Val2.jpg": "/instagram_clone/static/media/Val2.d88aaf401fcbc05ef16a.jpg",
+    "static/media/Kriti2.jpg": "/instagram_clone/static/media/Kriti2.8edfcf0234d637726763.jpg",
+    "static/media/Val1.jpg": "/instagram_clone/static/media/Val1.ab30da84f1f555a7c158.jpg",
+    "static/media/fontawesome-webfont.eot": "/instagram_clone/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/instagram_clone/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/Manish4.png": "/instagram_clone/static/media/Manish4.8916abd86bf8a0671e25.png",
+    "static/media/Manish.jpg": "/instagram_clone/static/media/Manish.6b634ac24a42c03d88e9.jpg",
+    "static/media/Val.jpg": "/instagram_clone/static/media/Val.b2dea54e6a1b0c58c913.jpg",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/instagram_clone/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/NoPictureLogo.png": "/instagram_clone/static/media/NoPictureLogo.3f8d35f518660730113a.png",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/instagram_clone/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/Instagram.png": "/instagram_clone/static/media/Instagram.0d490cafeedb2dcef5e0.png",
+    "static/media/Dot.jpg": "/instagram_clone/static/media/Dot.93b5e376e7a23556d9cf.jpg",
+    "static/media/Copyright.png": "/instagram_clone/static/media/Copyright.b781160af6d86abac472.png",
+    "index.html": "/instagram_clone/index.html",
+    "main.a050510b.css.map": "/instagram_clone/static/css/main.a050510b.css.map",
+    "main.0f5c6676.js.map": "/instagram_clone/static/js/main.0f5c6676.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a050510b.css",
+    "static/js/main.0f5c6676.js"
+  ]
+}
